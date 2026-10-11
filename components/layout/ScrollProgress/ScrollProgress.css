@@ -1,0 +1,9 @@
+.prog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 0;
+  background: var(--sky);
+  z-index: 100;
+}

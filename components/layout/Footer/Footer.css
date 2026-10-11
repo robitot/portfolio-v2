@@ -1,0 +1,51 @@
+/* footer */
+.foot {
+  background: var(--deep-d);
+  color: var(--cream);
+}
+.foot-in {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 56px 24px 40px;
+  display: grid;
+  gap: 36px;
+}
+.foot-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot .nl-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.foot-b {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px dashed var(--mid);
+  padding-top: 26px;
+  font-size: 14px;
+}
+.up svg {
+  animation: none;
+}
+.up:hover svg {
+  animation: fly 0.5s steps(3) infinite;
+}
+@keyframes fly {
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.heart {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: -2px;
+  margin: 0 2px;
+}

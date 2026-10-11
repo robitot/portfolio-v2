@@ -1,0 +1,14 @@
+export { default as AiIcon } from './AiIcon';
+export { default as ArrowDownIcon } from './ArrowDownIcon';
+export { default as BackendIcon } from './BackendIcon';
+export { default as BurgerIcon } from './BurgerIcon';
+export { default as DatabaseIcon } from './DatabaseIcon';
+export { default as FrontendIcon } from './FrontendIcon';
+export { default as GitHubIcon } from './GitHubIcon';
+export { default as HeartIcon } from './HeartIcon';
+export { default as LinkedInIcon } from './LinkedInIcon';
+export { default as MailIcon } from './MailIcon';
+export { default as PhoneIcon } from './PhoneIcon';
+export { default as PinIcon } from './PinIcon';
+export { default as RocketIcon } from './RocketIcon';
+export { default as ToolsIcon } from './ToolsIcon';
