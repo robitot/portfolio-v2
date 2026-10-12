@@ -10,6 +10,10 @@ export const NAV: NavItem[] = [
     label: 'Experiences',
   },
   {
+    id: 'projects',
+    label: 'Projects',
+  },
+  {
     id: 'about',
     label: 'About Me',
   },

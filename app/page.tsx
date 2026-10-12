@@ -7,6 +7,7 @@ import About from '@/components/sections/About/About';
 import Contact from '@/components/sections/Contact/Contact';
 import Experiences from '@/components/sections/Experiences/Experiences';
 import Hero from '@/components/sections/Hero/Hero';
+import Projects from '@/components/sections/Projects/Projects';
 import Skills from '@/components/sections/Skills/Skills';
 import PixelStairDivider from '@/components/ui/PixelStairDivider/PixelStairDivider';
 
@@ -21,6 +22,8 @@ export default function Home() {
         <Hero />
         <PixelStairDivider color="var(--cream)" />
         <Experiences />
+        <PixelStairDivider color="var(--deep)" />
+        <Projects />
         <PixelStairDivider color="var(--deep)" />
         <About />
         <PixelStairDivider color="var(--cream)" />

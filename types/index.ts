@@ -61,3 +61,37 @@ export interface ContactValues {
 }
 
 export type ContactErrors = Partial<Record<keyof ContactValues, string>>;
+
+export type ProjectCategory = 'Full Stack' | 'Frontend' | 'PWA';
+export type ProjectStatus = 'Live' | 'In progress' | 'Completed' | 'Prototype';
+
+export interface Project {
+  /** URL slug: the detail page lives at /projects/<slug> */
+  slug: string;
+  title: string;
+  /** One line shown under the title on the detail page */
+  tagline: string;
+  /** 1 to 2 sentences shown on the card */
+  summary: string;
+  category: ProjectCategory;
+  year: string;
+  role: string;
+  timeline: string;
+  team: string;
+  status: ProjectStatus;
+  featured?: boolean;
+  /** Cover screenshot in /public/images/projects, e.g. '/images/projects/inventory-pulse.png'. Placeholder shows when omitted. */
+  image?: string;
+  /** Optional extra screenshots (up to 3 shown). Placeholders show when omitted. */
+  gallery?: string[];
+  links: { live?: string; repo?: string };
+  /** Short list shown as tags on the card */
+  tech: string[];
+  /** Grouped stack shown on the detail page */
+  stack: { label: string; items: string[] }[];
+  problem: string;
+  solution: string;
+  features: { title: string; text: string }[];
+  metrics: { value: string; label: string }[];
+  challenges: { title: string; text: string }[];
+}

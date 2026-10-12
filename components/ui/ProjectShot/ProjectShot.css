@@ -1,0 +1,71 @@
+/* Pixel browser-window frame used on project cards and detail pages */
+.pj-shot {
+  background: var(--deep-x);
+  border-bottom: 3px solid var(--deep-x);
+}
+.pj-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px;
+}
+.pj-bar i {
+  width: 8px;
+  height: 8px;
+  background: var(--mid);
+}
+.pj-bar i:first-child {
+  background: var(--sky);
+}
+.pj-bar i:nth-child(2) {
+  background: var(--cream);
+}
+.pj-view {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--mid);
+}
+.pj-ph {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  text-align: center;
+  background:
+    linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.07) 25%,
+        transparent 25% 75%,
+        rgba(255, 255, 255, 0.07) 75%
+      )
+      0 0 / 24px 24px,
+    linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.07) 25%,
+        transparent 25% 75%,
+        rgba(255, 255, 255, 0.07) 75%
+      )
+      12px 12px / 24px 24px,
+    var(--mid);
+  color: var(--ink);
+  transition: background-position 0.6s steps(6);
+}
+.pj-ph span {
+  font-family: var(--font-press), ui-monospace, monospace;
+  font-size: 9px;
+  line-height: 1.8;
+  max-width: 85%;
+  background: var(--cream-l);
+  border: 3px solid var(--deep-x);
+  padding: 10px 12px;
+  box-shadow: 4px 4px 0 var(--deep-x);
+}
+.pj-card:hover .pj-ph {
+  background-position:
+    24px 0,
+    36px 12px,
+    0 0;
+}
