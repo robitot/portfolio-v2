@@ -11,7 +11,7 @@ export default function StatsRow() {
     <div ref={ref} className={`stats rv ${inView ? 'in' : ''}`} id="stats">
       <div className="stat">
         <b>{Math.round(STATS.years * k)}+</b>
-        <span>Years Experience</span>
+        <span>Year Exp</span>
       </div>
       <div className="stat">
         <b>{Math.round(STATS.companies * k)}</b>
@@ -21,10 +21,7 @@ export default function StatsRow() {
         <b>{Math.round(STATS.certs * k)}</b>
         <span>Certifications</span>
       </div>
-      <div className="stat">
-        <b style={{ fontSize: 16, lineHeight: 1.5, paddingTop: 6, paddingBottom: 6 }}>Full Stack</b>
-        <span>Range</span>
-      </div>
+
     </div>
   );
 }

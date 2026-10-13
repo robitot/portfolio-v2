@@ -44,6 +44,10 @@ export default function About() {
             <StatsRow />
           </div>
         </div>
+        <Reveal className="aihl">
+          <span className="aitag">WHAT I CAN DO?</span>
+          <p>{PROFILE.services}</p>
+        </Reveal>
         <EducationList />
         <Eyebrow style={{ marginTop: 72 }}>CERTIFICATES</Eyebrow>
         <div className="certs">
