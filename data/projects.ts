@@ -15,13 +15,12 @@ export const PROJECTS: Project[] = [
     category: 'Full Stack',
     year: '2025',
     role: 'Full Stack Developer',
-    timeline: '3 month',
+    timeline: '3 months',
     team: 'Solo',
     status: 'Live',
     featured: true,
     links: {
       live: 'https://coffee-shop-inv-pos.up.railway.app/',
-      repo: 'https://github.com/robitot/Coffee-Shop-INV-POS-System',
     },
     tech: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'MySQL'],
     stack: [
@@ -91,161 +90,162 @@ export const PROJECTS: Project[] = [
       '/images/coffeeShop/Sizes.png',
     ],
   },
-  // {
-  //   slug: 'rk-prints',
-  //   title: 'RK Prints',
-  //   tagline: 'An online print shop with account login and order tracking.',
-  //   summary:
-  //     'Storefront for custom prints with sign-in, a cart, and a simple order history. Built mobile-first with fast page loads.',
-  //   category: 'Full Stack',
-  //   year: '2025',
-  //   role: 'Full Stack Developer',
-  //   timeline: '2 months',
-  //   team: 'Solo',
-  //   status: 'In progress',
-  //   links: {
-  //     live: '#',
-  //     repo: '#',
-  //   },
-  //   tech: ['Next.js', 'TypeScript', 'AWS Cognito', 'Amplify'],
-  //   stack: [
-  //     {
-  //       label: 'Frontend',
-  //       items: ['Next.js', 'TypeScript', 'CSS Modules'],
-  //     },
-  //     {
-  //       label: 'Auth & Backend',
-  //       items: ['AWS Cognito', 'AWS Amplify'],
-  //     },
-  //     {
-  //       label: 'Tooling',
-  //       items: ['Git', 'Figma', 'Postman'],
-  //     },
-  //   ],
-  //   problem:
-  //     'Small print shops often take orders through chat, which is slow to manage and easy to lose track of.',
-  //   solution:
-  //     'A clean storefront where customers can sign in, upload or pick a design, place an order, and check its status at any time.',
-  //   features: [
-  //     {
-  //       title: 'Secure sign-in',
-  //       text: 'Email sign-up and login handled by AWS Cognito.',
-  //     },
-  //     {
-  //       title: 'Product pages',
-  //       text: 'Fast, SEO-friendly pages generated with Next.js.',
-  //     },
-  //     {
-  //       title: 'Cart and checkout flow',
-  //       text: 'Simple, mobile-friendly steps with clear validation.',
-  //     },
-  //     {
-  //       title: 'Order history',
-  //       text: 'Customers can see past orders and their current status.',
-  //     },
-  //   ],
-  //   metrics: [
-  //     {
-  //       value: 'XX',
-  //       label: 'Product pages',
-  //     },
-  //     {
-  //       value: 'XX ms',
-  //       label: 'Average page load',
-  //     },
-  //     {
-  //       value: '100%',
-  //       label: 'Mobile responsive',
-  //     },
-  //   ],
-  //   challenges: [
-  //     {
-  //       title: 'Protected pages',
-  //       text: 'Keeping account pages private while the rest of the site stays statically fast. Solved with route-level auth checks.',
-  //     },
-  //     {
-  //       title: 'Image-heavy pages',
-  //       text: 'Large product images slowed pages down. Fixed with optimized images and lazy loading.',
-  //     },
-  //   ],
-  // },
-  // {
-  //   slug: 'taskboard',
-  //   title: 'Taskboard',
-  //   tagline: 'A drag-and-drop kanban board that feels instant.',
-  //   summary:
-  //     'Plan work in columns, drag cards between them, and keep everything saved in the browser. Built for speed and keyboard use.',
-  //   category: 'Frontend',
-  //   year: '2024',
-  //   role: 'Frontend Developer',
-  //   timeline: '3 weeks',
-  //   team: 'Solo',
-  //   status: 'Live',
-  //   links: {
-  //     live: '#',
-  //     repo: '#',
-  //   },
-  //   tech: ['React', 'TypeScript', 'Tailwind', 'Zustand'],
-  //   stack: [
-  //     {
-  //       label: 'Frontend',
-  //       items: ['React', 'TypeScript', 'Tailwind CSS'],
-  //     },
-  //     {
-  //       label: 'State & Storage',
-  //       items: ['Zustand', 'localStorage'],
-  //     },
-  //     {
-  //       label: 'Tooling',
-  //       items: ['Vite', 'Git', 'GitHub'],
-  //     },
-  //   ],
-  //   problem: 'Most task boards are heavy, slow to load and need an account just to try them.',
-  //   solution:
-  //     'A lightweight board that opens instantly, needs no sign-up, and keeps your data on your device.',
-  //   features: [
-  //     {
-  //       title: 'Drag and drop',
-  //       text: 'Smooth card moves between columns, with touch support.',
-  //     },
-  //     {
-  //       title: 'Keyboard shortcuts',
-  //       text: 'Create, move and search cards without touching the mouse.',
-  //     },
-  //     {
-  //       title: 'Saved automatically',
-  //       text: 'Boards persist in the browser, with export and import.',
-  //     },
-  //     {
-  //       title: 'Dark and light themes',
-  //       text: 'Follows system preference, switchable at any time.',
-  //     },
-  //   ],
-  //   metrics: [
-  //     {
-  //       value: 'XX kB',
-  //       label: 'Total bundle size',
-  //     },
-  //     {
-  //       value: 'XX',
-  //       label: 'Lighthouse performance',
-  //     },
-  //     {
-  //       value: 'XX',
-  //       label: 'GitHub stars',
-  //     },
-  //   ],
-  //   challenges: [
-  //     {
-  //       title: 'Smooth dragging',
-  //       text: 'Avoiding re-renders of the whole board while dragging by isolating card state.',
-  //     },
-  //     {
-  //       title: 'Accessible drag and drop',
-  //       text: 'Added keyboard and screen reader support so the board is usable without a mouse.',
-  //     },
-  //   ],
-  // },
+  {
+    slug: 'ferry-booking',
+    title: 'Ferry Booking System',
+    tagline: 'A Simple Ferry Booking System',
+    summary:
+      'A comprehensive ferry booking system featuring an intuitive visual booking interface, real-time seat availability, and efficient seat management for each ferry, streamlining reservations and enhancing the passenger booking experience',
+    category: 'Full Stack',
+    year: '2025',
+    role: 'Full Stack Developer',
+    timeline: '3 months',
+    team: 'Solo',
+    status: 'Live',
+    links: {
+      live: 'https://ferry-booking-system.up.railway.app/',
+    },
+    tech: ['HTML', 'CSS', 'Tailwind', 'JavaScript', 'PHP', 'Laravel', 'MySQL'],
+    stack: [
+      {
+        label: 'Frontend',
+        items: ['HTML', 'CSS', 'Tailwind', 'JavaScript'],
+      },
+      {
+        label: 'Backend',
+        items: ['PHP', 'Laravel'],
+      },
+      {
+        label: 'Data & Infra',
+        items: ['MySQL', 'Railway'],
+      },
+    ],
+    problem:
+      'Inefficient and unorganized ferry booking management due to reliance on social media platforms such as Facebook, resulting in booking conflicts, duplicate reservations, inaccurate seat availability, delayed responses, and a high risk of human error',
+    solution:
+      'Develop a centralized ferry booking system with dedicated client and admin interfaces, enabling passengers to conveniently book trips, select seats through an interactive visual seating layout, and process payments securely. The system will provide real-time seat availability, automated booking management, and centralized reservation tracking to minimize booking conflicts, reduce manual errors, and improve overall operational efficiency and customer experience.',
+    features: [
+      {
+        title: 'Client-Facing System',
+        text: 'Passengers can conveniently book ferry trips, select seats through an interactive seating layout, manage their reservations, and complete payments through a single, user-friendly platform.',
+      },
+      {
+        title: 'Ferry and Seat Management',
+        text: 'Admins can manage ferry details, configure seat types and capacities, and customize seat layouts and numbering to ensure accurate seat allocation and efficient booking management.',
+      },
+      {
+        title: 'Integrated Payment System',
+        text: 'Passengers can securely complete their payments directly within the platform, simplifying transactions, streamlining booking confirmation, and providing a more convenient and seamless reservation experience.',
+      },
+      {
+        title: 'Route and Destination Management',
+        text: 'Admins can manage ferry routes, destinations, schedules, and trip details, while passengers can view available trips, track booking statuses, and access their reservation history in one centralized platform.',
+      },
+    ],
+    metrics: [
+      {
+        value: 'XX',
+        label: 'Product pages',
+      },
+      {
+        value: 'XX ms',
+        label: 'Average page load',
+      },
+      {
+        value: '100%',
+        label: 'Mobile responsive',
+      },
+    ],
+    challenges: [
+      {
+        title: 'Interactive Ferry Layout and Real-Time Seat Availability',
+        text: 'Designing an accurate visual representation of ferry seating and bed arrangements, including different seat types, capacities, and availability. Ensuring seat selections and booking statuses remain synchronized to prevent double bookings and provide passengers with a reliable booking experience.',
+      },
+
+      {
+        title: 'Learning and Implementing Payment Integration',
+        text: 'Integrating a payment gateway was a new technical challenge that required dedicated time for research, understanding payment workflows, and implementing secure and reliable transactions within the booking system.',
+      },
+    ],
+    image: '/images/ferry/home.png',
+    gallery: [
+      '/images/ferry/details.png',
+      '/images/ferry/clientroutes.png',
+      '/images/ferry/routes.png',
+    ],
+  },
+  {
+    slug: 'rk-prints',
+    title: 'RK Prints — Business Landing Page',
+    tagline:
+      'A responsive business website featuring a product catalog, showcasing print services, and presenting products in a clean, user-friendly layout.',
+    summary:
+      'A responsive landing website for RK Prints, showcasing printing services and products through a clean, organized interface designed to help customers explore offerings and find relevant product information.',
+    category: 'Frontend',
+    year: '2026',
+    role: 'Frontend Developer',
+    timeline: '3 days',
+    team: 'Solo',
+    status: 'Live',
+    links: {
+      live: 'https://www.rkprints.shop/',
+    },
+    tech: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'TypeScript', 'Tailwind'],
+    stack: [
+      {
+        label: 'Frontend',
+        items: ['React', 'TypeScript', 'Tailwind CSS'],
+      },
+      {
+        label: 'Tooling',
+        items: ['Codex', 'Git', 'GitHub', 'Figma'],
+      },
+    ],
+    problem:
+      'Limited online visibility and the absence of a centralized digital product catalog make it difficult for customers to discover printing services, browse available products, and access essential business information.',
+    solution:
+      'Developed a responsive landing website to establish an online presence, showcase printing services, provide an organized product catalog, and help customers easily explore available offerings and business information.',
+    features: [
+      {
+        title: 'Services Section',
+        text: 'Showcases the available printing services through a clean, organized layout, helping customers quickly understand the business offerings and find the services they need.',
+      },
+      {
+        title: 'Product Display',
+        text: 'Presents available products in an organized, visually appealing catalog, allowing customers to browse product listings and easily explore the business offerings.',
+      },
+    ],
+    metrics: [
+      {
+        value: 'XX kB',
+        label: 'Total bundle size',
+      },
+      {
+        value: 'XX',
+        label: 'Lighthouse performance',
+      },
+      {
+        value: 'XX',
+        label: 'GitHub stars',
+      },
+    ],
+    challenges: [
+      {
+        title: 'Designing a User-Friendly Interface',
+        text: 'Creating a clean, responsive layout that effectively showcases printing services and products while ensuring a smooth browsing experience across desktop and mobile devices.',
+      },
+      {
+        title: 'Establishing a Consistent Color Scheme',
+        text: 'Selecting and applying a cohesive color palette that reflects the brand identity, maintains visual consistency, and improves readability throughout the website.',
+      },
+    ],
+    image: '/images/rk/hero.png',
+    gallery: [
+      '/images/rk/detail.png',
+      '/images/rk/contact.png',
+      '/images/rk/products.png',
+    ],
+  },
   // {
   //   slug: 'pixel-portfolio',
   //   title: 'Pixel Portfolio',
