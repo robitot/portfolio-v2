@@ -6,6 +6,7 @@ import { PROFILE } from '@/data/profile';
 import { useActiveSection } from '@/hooks/useActiveSection';
 import { BurgerIcon } from '@/components/ui/icons';
 import './Navbar.css';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,11 +18,11 @@ export default function Navbar() {
           <b>RC</b>
           <span>{PROFILE.name}</span>
         </a>
-        <nav className="nl-row" aria-label="Primary">
+        <nav className="nl-row" aria-label="Footer">
           {NAV.map((n) => (
-            <a key={n.id} className={active === n.id ? 'nl on' : 'nl'} href={`#${n.id}`}>
+            <Link key={n.id} className="nl" href={`/#${n.id}`}>
               {n.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <button

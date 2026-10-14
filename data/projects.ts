@@ -89,6 +89,12 @@ export const PROJECTS: Project[] = [
       '/images/coffeeShop/Session.png',
       '/images/coffeeShop/Sizes.png',
     ],
+    demo: {
+      email: 'admin@gmail.com',
+      password: 'admin123',
+      url: 'https://coffee-shop-inv-pos.up.railway.app/',
+      source: '',
+    },
   },
   {
     slug: 'ferry-booking',
@@ -173,6 +179,12 @@ export const PROJECTS: Project[] = [
       '/images/ferry/clientroutes.png',
       '/images/ferry/routes.png',
     ],
+    demo: {
+      email: 'admin@gmail.com',
+      password: 'Admin123',
+      url: 'https://ferry-booking-system.up.railway.app/',
+      source: '',
+    },
   },
   {
     slug: 'rk-prints',
@@ -240,90 +252,98 @@ export const PROJECTS: Project[] = [
       },
     ],
     image: '/images/rk/hero.png',
-    gallery: [
-      '/images/rk/detail.png',
-      '/images/rk/contact.png',
-      '/images/rk/products.png',
-    ],
+    gallery: ['/images/rk/detail.png', '/images/rk/contact.png', '/images/rk/products.png'],
   },
-  // {
-  //   slug: 'pixel-portfolio',
-  //   title: 'Pixel Portfolio',
-  //   tagline: 'This site: a pixel-art portfolio with a character that follows your cursor.',
-  //   summary:
-  //     'Personal portfolio built with Next.js and TypeScript. Typed content files, custom hooks for animation, and zero UI libraries.',
-  //   category: 'Frontend',
-  //   year: '2026',
-  //   role: 'Designer and Developer',
-  //   timeline: '2 weeks',
-  //   team: 'Solo',
-  //   status: 'Live',
-  //   links: {
-  //     live: '#',
-  //     repo: '#',
-  //   },
-  //   tech: ['Next.js', 'React', 'TypeScript', 'CSS'],
-  //   stack: [
-  //     {
-  //       label: 'Framework',
-  //       items: ['Next.js App Router', 'React', 'TypeScript'],
-  //     },
-  //     {
-  //       label: 'Styling',
-  //       items: ['Plain CSS', 'Design tokens', 'Pixel-art SVG'],
-  //     },
-  //     {
-  //       label: 'Quality',
-  //       items: ['Reduced-motion support', 'Accessible markup', 'Responsive 320px+'],
-  //     },
-  //   ],
-  //   problem:
-  //     'Most developer portfolios look the same and are hard for recruiters to scan in a few seconds.',
-  //   solution:
-  //     'A clear, scannable layout with a distinct pixel identity, with all content in one typed data folder so updates take minutes.',
-  //   features: [
-  //     {
-  //       title: 'Cursor-tracking character',
-  //       text: 'Seven head frames, blinking, idle glances and a wave on click.',
-  //     },
-  //     {
-  //       title: 'Typed content',
-  //       text: 'Experience, skills and projects all live in data files.',
-  //     },
-  //     {
-  //       title: 'Scroll effects',
-  //       text: 'Reveals, count-up stats and a scroll-spy navbar.',
-  //     },
-  //     {
-  //       title: 'Accessible by default',
-  //       text: 'Semantic HTML, focus states and reduced-motion support.',
-  //     },
-  //   ],
-  //   metrics: [
-  //     {
-  //       value: 'XX',
-  //       label: 'Lighthouse accessibility',
-  //     },
-  //     {
-  //       value: '0',
-  //       label: 'UI libraries used',
-  //     },
-  //     {
-  //       value: 'XX',
-  //       label: 'Reusable components',
-  //     },
-  //   ],
-  //   challenges: [
-  //     {
-  //       title: 'Cursor tracking without lag',
-  //       text: 'Updating only the character frame (not the whole page) using requestAnimationFrame and refs.',
-  //     },
-  //     {
-  //       title: 'Server vs client components',
-  //       text: 'Keeping most of the page on the server and pushing client code down to the smallest pieces.',
-  //     },
-  //   ],
-  // },
+  {
+    slug: 'simple-pos',
+    title: 'Simple Inventory and POS System',
+    tagline: 'A Simple Inv and POS system for small businesses',
+    summary:
+      'This system highlights a comprehensive Point of Sale (POS) solution designed to deliver detailed, accurate, and reliable transaction management. It streamlines sales operations, improves inventory tracking, minimizes manual errors, and provides clear, organized records for better monitoring and reporting. With its focus on accuracy, efficiency, and consistency, the system helps businesses optimize daily operations, make informed decisions, and maintain better control over their sales and inventory processes.',
+    category: 'Full Stack',
+    year: '2025',
+    role: 'Designer and Developer',
+    timeline: '2 Months',
+    team: 'Solo',
+    status: 'Live',
+    links: {
+      live: 'https://simplepos.up.railway.app/',
+      repo: 'https://github.com/robitot/Simple-POS-System',
+    },
+    tech: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'PHP', 'Laravel', 'Livewire', 'MySQL'],
+    stack: [
+      {
+        label: 'Frontend',
+        items: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Blade'],
+      },
+      {
+        label: 'Backend',
+        items: ['PHP', 'Laravel', 'Livewire'],
+      },
+      {
+        label: 'Data & Infra',
+        items: ['MySQL', 'Railway'],
+      },
+    ],
+    problem:
+      'Inaccurate sales records caused by manual data entry, transaction errors, and inconsistent tracking can lead to discrepancies in sales reports, inventory levels, and financial records. These issues make it difficult for businesses to monitor actual sales performance, reconcile transactions, and make informed business decisions.',
+    solution:
+      'An integrated Point of Sale (POS) and Inventory Management System that automatically records sales transactions and updates inventory levels in real time. It minimizes manual errors, ensures accurate sales reporting, maintains consistent stock records, and provides reliable data for monitoring business performance and making informed decisions.',
+    features: [
+      {
+        title: 'Dashboard',
+        text: 'View key business metrics, sales performance, transaction summaries, and inventory insights in one centralized dashboard.',
+      },
+      {
+        title: 'Inventory Management',
+        text: 'Track stock levels, monitor product availability, and maintain accurate inventory records with automatic stock updates from sales transactions.',
+      },
+      {
+        title: 'Point of Sale (POS)',
+        text: 'Process sales transactions efficiently, calculate totals accurately, and generate reliable sales records while automatically updating inventory.',
+      },
+      {
+        title: 'POS Session Management',
+        text: 'Manage cashier sessions, monitor starting and ending cash balances, track transactions per session, and reconcile cash discrepancies for improved accountability.',
+      },
+    ],
+    metrics: [
+      {
+        value: 'XX',
+        label: 'Lighthouse accessibility',
+      },
+      {
+        value: '0',
+        label: 'UI libraries used',
+      },
+      {
+        value: 'XX',
+        label: 'Reusable components',
+      },
+    ],
+    challenges: [
+      {
+        title: 'Dynamic Receipt Printing Integration',
+        text: 'Implementing receipt printing without access to the client’s physical printer for testing. The solution required a dynamic printing approach that supports receipt formatting and printing while remaining adaptable to different printer setups.',
+      },
+      {
+        title: 'Detailed POS Transaction Management',
+        text: 'Ensuring every POS transaction captures accurate and complete details, including purchased items, quantities, prices, payment information, and transaction totals. Maintaining consistent records helps improve sales accuracy, inventory tracking, and transaction auditing.',
+      },
+    ],
+    image: '/images/simplePOS/login.png',
+    gallery: [
+      '/images/simplePOS/sidebar.png',
+      '/images/simplePOS/dashboard.png',
+      '/images/simplePOS/possession.png',
+    ],
+    demo: {
+      email: 'admin@gmail.com',
+      password: 'admin123',
+      url: 'https://simplepos.up.railway.app/',
+      source: 'https://github.com/robitot/Simple-POS-System',
+    },
+  },
 ];
 
 export const getProject = (slug: string) => PROJECTS.find((p) => p.slug === slug);

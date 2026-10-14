@@ -94,4 +94,10 @@ export interface Project {
   features: { title: string; text: string }[];
   metrics: { value: string; label: string }[];
   challenges: { title: string; text: string }[];
+  demo?: {
+    email: string;
+    password: string;
+    url: string;
+    source: string;
+  };
 }

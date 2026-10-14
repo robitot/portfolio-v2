@@ -8,7 +8,7 @@ export default function Experiences() {
   return (
     <section className="cream sec" id="experiences" aria-labelledby="h-exp">
       <div className="wrap">
-        <Eyebrow>01 / EXPERIENCES</Eyebrow>
+        <Eyebrow>01 / EXPERIENCES </Eyebrow>
         <SectionHeading id="h-exp">Where I&apos;ve built things.</SectionHeading>
         <div className="tl">
           {EXPERIENCE.map((e, i) => (

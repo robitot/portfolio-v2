@@ -3,6 +3,8 @@ import type { Project } from '@/types';
 import Button from '@/components/ui/Button/Button';
 import ProjectShot from '@/components/ui/ProjectShot/ProjectShot';
 import ArrowRightIcon from '@/components/ui/icons/ArrowRightIcon';
+import Eyebrow from '@/components/ui/Eyebrow/Eyebrow';
+import Reveal from '@/components/ui/Reveal/Reveal';
 
 export default function ProjectHeader({ project: p }: { project: Project }) {
   const meta = [
@@ -31,14 +33,52 @@ export default function ProjectHeader({ project: p }: { project: Project }) {
             </div>
           ))}
         </dl>
-        <div className="pd-cta">
-          {p.links.live && <Button href={p.links.live}>Live demo</Button>}
-          {p.links.repo && (
-            <Button variant="alt" href={p.links.repo}>
-              Source code
-            </Button>
+        {!p.demo && (
+          <div className="pd-cta">
+            {p.links.live && <Button href={p.links.live}>Live demo</Button>}
+            {p.links.repo && (
+              <Button variant="alt" href={p.links.repo}>
+                Source code
+              </Button>
+            )}
+          </div>
+        )}
+
+        <dl className="pd-meta">
+          {p.demo && (
+            <>
+              <div>
+                <dt>Demo Email</dt>
+                <dd style={{ wordBreak: 'break-all' }}>{p.demo.email}</dd>
+              </div>
+              <div>
+                <dt>Demo Password</dt>
+                <dd style={{ wordBreak: 'break-all' }}>{p.demo.password}</dd>
+              </div>
+              {p.demo.url && (
+                <div>
+                  <dt>Live Demo</dt>
+                  <dd>
+                    <a href={p.demo.url} target="_blank" rel="noopener noreferrer">
+                      Open the system
+                    </a>
+                  </dd>
+                </div>
+              )}
+              {p.demo.source && (
+                <div>
+                  <dt>Source Code</dt>
+                  <dd>
+                    <a href={p.demo.source} target="_blank" rel="noopener noreferrer">
+                      View on GitHub
+                    </a>
+                  </dd>
+                </div>
+              )}
+            </>
           )}
-        </div>
+        </dl>
+
         <div className="pd-cover">
           <ProjectShot
             src={p.image}

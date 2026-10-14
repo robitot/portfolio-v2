@@ -3,6 +3,7 @@ import { PROFILE } from '@/data/profile';
 import { HeartIcon, RocketIcon } from '@/components/ui/icons';
 import SocialIcon from '@/components/ui/icons/SocialIcon';
 import './Footer.css';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -17,9 +18,9 @@ export default function Footer() {
           </div>
           <nav className="nl-row" aria-label="Footer">
             {NAV.map((n) => (
-              <a key={n.id} className="nl" href={`#${n.id}`}>
+              <Link key={n.id} className="nl" href={`/#${n.id}`}>
                 {n.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>

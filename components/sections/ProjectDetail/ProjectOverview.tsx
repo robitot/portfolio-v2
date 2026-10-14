@@ -37,6 +37,8 @@ export default function ProjectOverview({ project: p }: { project: Project }) {
             </Reveal>
           ))}
         </div>
+
+        
       </div>
     </section>
   );
